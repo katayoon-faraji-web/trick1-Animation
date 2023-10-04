@@ -1,0 +1,96 @@
+*,*::after,*::before{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13, 15, 27);
+    >main{
+        
+        >.fingerprint{
+            margin: 30px auto;
+            width: 500px;
+            height: 700px;
+            position: relative;
+            >*{
+                position: absolute;
+                
+                animation-timing-function: linear;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            >div{
+                top: 10%;
+                left: 0;
+                width: 120%;height: 5px;
+                background-color: rgb(37, 214, 234);
+                animation-name: line;
+                animation-duration: 5s;
+                box-shadow: 0 0 30px 5px  rgb(37, 214, 234);
+                z-index: 1;
+            }
+            
+            >section{
+                
+                left: 10%;
+                width: 100%;
+                height: 80%;
+                overflow: hidden;
+                position: absolute;
+                animation-duration: 5s;
+                top: 10%;
+                background-size: cover;
+                background-position: top ;
+                
+                &:nth-of-type(1){
+                    background-image: url(img/png1.png) ;
+                    background-color: gray;               
+                    
+                }
+                &:nth-of-type(2){
+                    background-image: url(img/png1.png) ;
+                    background-color: rgb(37, 214, 234);
+                    animation-name: fingerblue;
+                    
+                }
+                &:nth-of-type(3){
+                    background-image: url(img/png2.png) ;
+                 
+                }
+   
+            }
+            
+        }
+    }
+}
+@keyframes line {
+    0% , 100%{
+        top: 10%;
+
+    }
+
+    50%{
+        top: 88%;
+    }
+    100%{
+        top: 10%;
+    }
+    
+
+}
+@keyframes fingerblue {
+    0%{
+        height: 0;
+    }
+
+    50%{
+        height: 80%;
+    }
+    100%{
+        height: 0;
+
+    }
+    
+}
+
+
