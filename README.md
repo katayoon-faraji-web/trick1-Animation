@@ -1,13 +1,13 @@
-# trick1
+# trick1-Animation
 https://github.com/katayoon-faraji-web/trick1/assets/144775981/222a0a3b-6a91-41eb-a7ae-c8cb7d93046f
 
-- [Demo Project](https://katayoon-faraji-web.github.io/trick1/)
+- [Demo Project](https://katayoon-faraji-web.github.io/trick1-Animation/)
 
 - Developed by katayoon faraji
 
 - 🗓️Created - 2023-10-02
 
-- 💻Technologies Used - Html , css ,Saa
+- 💻Technologies Used - Html , css ,Animation , Sass
 
 - Role - Frontend
 
